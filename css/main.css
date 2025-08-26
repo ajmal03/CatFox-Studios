@@ -222,7 +222,7 @@ body {
   min-width: 320px;
   overflow-x: hidden !important;
   font: normal 400 1.6rem/1.4 "Montserrat", sans-serif;
-  background-color: #e51743;
+  background-color: #221F7B;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1512,13 +1512,13 @@ h1 span.outline-white {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 h1 span.outline-colored {
-  color: #e51743;
+  color: #221F7B;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #e51743;
+  -webkit-text-stroke-color: #221F7B;
 }
 h1 span.colored {
-  color: #e51743;
+  color: #221F7B;
 }
 h1.medium {
   font-size: 8rem;
@@ -1530,10 +1530,10 @@ h1.medium span.outline-white {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 h1.medium span.outline-colored {
-  color: #e51743;
+  color: #221F7B;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #e51743;
+  -webkit-text-stroke-color: #221F7B;
 }
 h1.large {
   font-size: 5rem;
@@ -1545,10 +1545,10 @@ h1.large span.outline-white {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 h1.large span.outline-colored {
-  color: #e51743;
+  color: #221F7B;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #e51743;
+  -webkit-text-stroke-color: #221F7B;
 }
 @media only screen and (min-width: 768px) {
   h1.large {
@@ -1561,10 +1561,10 @@ h1.large span.outline-colored {
     -webkit-text-stroke-color: rgb(255, 255, 255);
   }
   h1.large span.outline-colored {
-    color: #e51743;
+    color: #221F7B;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #e51743;
+    -webkit-text-stroke-color: #221F7B;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -1592,13 +1592,13 @@ h2 span.outline-white {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 h2 span.outline-colored {
-  color: #e51743;
+  color: #221F7B;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #e51743;
+  -webkit-text-stroke-color: #221F7B;
 }
 h2 span.colored {
-  color: #e51743;
+  color: #221F7B;
 }
 h2 small {
   display: block;
@@ -1672,10 +1672,10 @@ a {
   opacity: 0.5;
   font: normal 700 13.4rem/0.84 "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #e51743;
+  color: #221F7B;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #e51743;
+  -webkit-text-stroke-color: #221F7B;
 }
 .section-caption.bright {
   opacity: 1;
@@ -1738,13 +1738,13 @@ a {
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .popup-title__title span.outline-colored {
-  color: #e51743;
+  color: #221F7B;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #e51743;
+  -webkit-text-stroke-color: #221F7B;
 }
 .popup-title__title span.colored {
-  color: #e51743;
+  color: #221F7B;
 }
 
 .popup-title__text {
@@ -1765,7 +1765,7 @@ a {
   position: relative;
   width: 100%;
   padding: 2rem 0;
-  background-color: #e51743;
+  background-color: #221F7B;
   background-repeat: no-repeat;
   background-position: center;
   -moz-background-size: cover;
@@ -1883,7 +1883,7 @@ a {
           transform: translateX(-50%);
   width: 0%;
   height: 1px;
-  background-color: #e51743;
+  background-color: #221F7B;
   -webkit-transition: width 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out;
   -moz-transition: width 0.3s ease-in-out;
@@ -1951,7 +1951,7 @@ a {
           transform: translateX(-50%);
   width: 0%;
   height: 1px;
-  background-color: #e51743;
+  background-color: #221F7B;
   -webkit-transition: width 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out;
   -moz-transition: width 0.3s ease-in-out;
@@ -2089,7 +2089,7 @@ a {
 }
 
 .btn-fill {
-  background-color: #e51743;
+  background-color: #221F7B;
   height: 4.4rem;
   line-height: 4.4rem;
   padding: 0 2rem;
@@ -2219,7 +2219,7 @@ form .inputs-description {
   color: rgb(255, 255, 255);
 }
 .form-light input:focus, .form-light textarea:focus {
-  border: 1px solid #e51743;
+  border: 1px solid #221F7B;
 }
 .form-light .inputs-description {
   color: rgba(255, 255, 255, 0.6);
@@ -2244,7 +2244,7 @@ form .inputs-description {
   position: relative;
   font-size: 4rem;
   line-height: 1;
-  color: #e51743;
+  color: #221F7B;
 }
 
 .reply-group__title {
@@ -2555,7 +2555,7 @@ form .inputs-description {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #e51743;
+  background-color: #221F7B;
 }
 
 .media__image {
@@ -2988,7 +2988,7 @@ form .inputs-description {
   display: block;
   font: normal 600 1.4rem/1.2 "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #e51743;
+  color: #221F7B;
 }
 .slide__caption p {
   font: normal 600 1.4rem/1.2 "Montserrat", sans-serif;
@@ -3169,7 +3169,7 @@ form .inputs-description {
   position: relative;
   width: 100%;
   padding: 2rem 0;
-  background-color: #e51743;
+  background-color: #221F7B;
   background-repeat: no-repeat;
   background-position: center;
   -moz-background-size: cover;
@@ -3333,7 +3333,7 @@ form .inputs-description {
   left: 0;
   width: 0px;
   height: 1px;
-  background-color: #e51743;
+  background-color: #221F7B;
 }
 
 .skill-bar-percent {
@@ -3746,7 +3746,7 @@ form .inputs-description {
 
 .pswp__button--close {
   position: relative;
-  background-color: #e51743;
+  background-color: #221F7B;
 }
 .pswp__button--close:active {
   opacity: 1;
@@ -3813,7 +3813,7 @@ form .inputs-description {
   text-align: center;
   overflow: hidden;
   cursor: pointer;
-  background-color: #e51743;
+  background-color: #221F7B;
 }
 #zoom-in .btn-icon, #zoom-out .btn-icon {
   position: relative;
