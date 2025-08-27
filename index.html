@@ -68,9 +68,22 @@
         <div class="loader__content">
           <div class="loader__text">
             <!-- Your Text Here -->
-            <div style="text-align: center;"></div>
-                <img src="img/TM. CATFOX LOGO (1).gif" alt="CatFox Studios" style="height: 150px; width: 150px; border-radius: 50%; display: block; margin: 0 auto; animation: fadeIn 1s ease-in-out, zoomIn 1s ease-in-out; animation-fill-mode: both; background-color: black; padding: 5px;">
+            <div style="text-align: center; opacity: 0; transform: translateY(20px); animation: fadeUp 1s ease-in-out forwards;"></div>
+              <img src="img/TM. CATFOX LOGO (1).gif" alt="CatFox Studios" style="height: 250px; width: 250px; border-radius: 50%; display: block; margin: 0 auto; animation: fadeIn 1s ease-in-out, zoomIn 1s ease-in-out; animation-fill-mode: both; background-color: black; padding: 5px;">
             </div>
+
+            <style>
+              @keyframes fadeUp {
+              from {
+                opacity: 0;
+                transform: translateY(20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+              }
+            </style>
             <style>
               @keyframes fadeIn {
                 from { opacity: 0; }
@@ -81,16 +94,7 @@
                 to { transform: scale(1); }
               }
             </style>
-            <br>
-            <span class="outline-colored" style="font-family:fredericka the great,fantasy; font-size: 5em; letter-spacing: 0.1em;">we sculpt your vision</span>
-            <style>
-              @media (max-width: 768px) {
-              .outline-colored {
-                font-size: 3em !important; /* Adjust font size for mobile */
-                letter-spacing: 0.05em !important; /* Adjust letter spacing for mobile */
-              }
-              }
-            </style>
+           
           </div>
         </div>
         <!-- <div class="loader__caption">
@@ -203,12 +207,12 @@
                     <!-- <h1 class="large"><span class="outline-white" style="font-size: 70%;">grow your vision
                     <br> with us</span></h1> -->
 
-                      <p style="font-family: 'americantypwrteritcw01--731025'; font-size: 20px; color: white; text-align: center; font-style: italic;">
-                      “It is never too late to be who you might have been.”
-                      <br>
-                      -George Eliot
+                      <h3 class="explore vertical animated link-s" style="font-family: 'americantypwrteritcw01--731025'; font-size: 20px; color: white; text-align: center; font-style: italic;">
+                      We empower independent artists and music creators by offering world class production, <br> <br> mentoring and immersive workshops to transform vision into unforgettable artistic expressions.
+
+
                       
-                      </p>
+                      </h3>
                       <br>
                     <div id="comp-lxjb2iyg" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lxjb2iy</div>g wixui-rich-text" data-testid="richTextElement" data-motion-enter="done">
                       <h2 class="font_0 wixui-rich-text__text" style="font-size:80px; text-align:center;">
