@@ -30,6 +30,7 @@
 // Table of Contents End
 // ------------------------------------------------
 
+
 $(window).on("load", function() {
 
   "use strict";
@@ -45,12 +46,13 @@ $(window).on("load", function() {
     
     // Add tap/click handler 
     $(".loader").one('click', function() {
+      // Removed delay by immediately adding loaded class
       $(".loader").addClass('loaded');
       
-      // Add intermediate screen with responsive styles
+      // Immediately add intermediate screen
       $("body").append('<div class="intermediate-screen">' +
       '<div class="intermediate-content">' +
-      '<h2 class="vision-text">we sculpt your vision</h2>' +
+      '<h2 class="vision-text" style="margin-bottom: 370px; font-weight: normal;">we sculpt your vision</h2>' +
       '<img src="img/TM. CATFOX LOGO (1).gif" alt="Logo" class="logo-image">' +
       '</div>' +
       '</div>');
@@ -70,7 +72,7 @@ $(window).on("load", function() {
       justify-content: center;
       z-index: 9999;
       opacity: 0;
-      transition: opacity 0.3s;
+      transition: opacity 0.2s;
       }
       .intermediate-content {
       text-align: center;
@@ -83,12 +85,14 @@ $(window).on("load", function() {
       }
       .vision-text {
       font-size: 65px;
+      font-weight: normal;
+      font-family: 'Anonymous Pro', monospace;
       }
       .logo-image {
       width: 300px;
       position: fixed;
       bottom: 30px;
-      right: 30px;
+      left: 30px;
       }
       @media (max-width: 768px) {
       .vision-text {
@@ -97,19 +101,19 @@ $(window).on("load", function() {
       .logo-image {
       width: 200px;
       bottom: 50px;
-      right: 50%;
-      transform: translateX(50%);
+      left: 50%;
+      transform: translateX(-50%);
       }
       }
       `)
       .appendTo("head");
 
-      // Show intermediate screen
-      $(".intermediate-screen").animate({opacity: 1});
+      // Show intermediate screen immediately
+      $(".intermediate-screen").css('opacity', '1');
 
       // Handle click on intermediate screen
       $(".intermediate-screen").one('click', function() {
-      $(this).fadeOut(300, function() {
+      $(this).fadeOut(200, function() {
       $(this).remove();
       $("body").addClass('loaded');
       });
@@ -121,9 +125,8 @@ $(window).on("load", function() {
   // Loader & Main Section Loading Animation End
   // --------------------------------------------- //
 
-  // --------------------------------------------- //
+  // Rest of the code remains the same...
   // Swiper Slider Settings Start
-  // --------------------------------------------- //
   var sliderSlide = $('.slider-slide'),
       sliderFade = $('.slider-fade');
 
@@ -173,10 +176,6 @@ $(window).on("load", function() {
           });
         },3200);
       };
-  // --------------------------------------------- //
-  // Swiper Slider Settings End
-  // --------------------------------------------- //
-
 });
 
 $(function() {
