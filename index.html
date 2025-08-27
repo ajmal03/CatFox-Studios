@@ -67,12 +67,20 @@
     <!-- Loader Start -->
     <div class="loader" style="background: url('img/backgrounds/loader-img.jpg') center center / cover no-repeat; cursor: pointer;" onclick="document.querySelector('.loader').style.display='none';">
       <div class="loader__container">
-        <div class="loader__content">
-          <div class="loader__text"></div>
-          <div style="text-align: center;">
-            <img src="img/TM. CATFOX LOGO (1).gif" alt="CatFox Studios" style="height: 400px; width: 400px; border-radius: 50%; display: block; margin: 0 auto; background-color: black; padding: 5px;">
-          </div>
+      <div class="loader__content">
+        <div class="loader__text"></div>
+        <div style="text-align: center;"></div>
+        <img src="img/TM. CATFOX LOGO (1).gif" alt="CatFox Studios" style="height: 400px; width: 400px; border-radius: 50%; display: block; margin: 0 auto; background-color: black; padding: 5px;">
         </div>
+        <style>
+        @media (max-width: 768px) {
+          .loader__content img {
+          height: 250px !important;
+          width: 250px !important;
+          }
+        }
+        </style>
+      </div>
       </div>
     </div>
     
