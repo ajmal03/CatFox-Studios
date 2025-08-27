@@ -89,9 +89,9 @@ $(window).on("load", function() {
       font-family: 'Anonymous Pro', monospace;
       }
       .logo-image {
-      width: 300px;
+      width: 450px;
       position: fixed;
-      bottom: 30px;
+      bottom: 20px;
       left: 30px;
       }
       @media (max-width: 768px) {
