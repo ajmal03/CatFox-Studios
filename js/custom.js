@@ -1,3 +1,4 @@
+
 // ------------------------------------------------
 // Project Name: Hintio Coming Soon & Landing Page Template
 // Project Description: Hintio - clean and bold coming soon & landing page template to kick-start your project
@@ -35,16 +36,52 @@ $(window).on("load", function() {
 
   // --------------------------------------------- //
   // Loader & Main Section Loading Animation Start
-  // --------------------------------------------- //
+  // Add initial classes and click handler
   $(".loader").addClass('is-animated');
 
+  // Show tap to continue message after animation
   setTimeout(function(){
-    $(".loader").addClass('loaded');
-  },1300);
+    $(".loader").addClass('ready');
+    // Add tap/click handler 
+    $(".loader").one('click', function() {
+      $(".loader").addClass('loaded');
+      
+      // Add intermediate screen
+      $("body").append('<div class="intermediate-screen">' +
+        '<div class="intermediate-content" style="text-align: center; max-width: 800px; padding: 20px; width: 100%;">' +
+          '<h2 style="font-size: 24px;">We empower independent artists and music creators by offering world class production, mentoring and immersive workshops to transform vision into unforgettable artistic expressions.</h2>' +
+          
+          '<img src="img/TM. CATFOX LOGO (1).gif" alt="Logo" style="width: 150px; background-color: black; padding: 5px; border-radius: 50%; margin-bottom: 30px; position: absolute; bottom: 30px; right: 30px; ' +
+          '@media (max-width: 768px) { position: static; margin: 30px auto; }">' +
+        '</div>' +
+        '</div>');
 
-  setTimeout(function(){
-    $("body").addClass('loaded');
-  },1600);
+      // Style the intermediate screen
+      $(".intermediate-screen").css({
+      'position': 'fixed',
+      'top': 0,
+      'left': 0,
+      'width': '100%',
+      'height': '100%',
+      'background': 'url(img/backgrounds/CHU06678.JPG) center/cover',
+      'display': 'flex',
+      'align-items': 'center',
+      'justify-content': 'center',
+      'z-index': 9999,
+      'opacity': 0,
+      'transition': 'opacity 0.3s'
+      }).animate({opacity: 1});
+
+      // Handle click on intermediate screen
+      $(".intermediate-screen").one('click', function() {
+      $(this).fadeOut(300, function() {
+        $(this).remove();
+        $("body").addClass('loaded');
+      });
+      });
+      
+    });
+    }, 1300);
   // --------------------------------------------- //
   // Loader & Main Section Loading Animation End
   // --------------------------------------------- //
