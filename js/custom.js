@@ -42,41 +42,76 @@ $(window).on("load", function() {
   // Show tap to continue message after animation
   setTimeout(function(){
     $(".loader").addClass('ready');
+    
     // Add tap/click handler 
     $(".loader").one('click', function() {
       $(".loader").addClass('loaded');
       
-      // Add intermediate screen
+      // Add intermediate screen with responsive styles
       $("body").append('<div class="intermediate-screen">' +
-        '<div class="intermediate-content" style="text-align: center; max-width: 800px; padding: 20px; width: 100%;">' +
-          '<h2 style="font-size: 65px;">we sculpt your vision</h2>' +
-          
-          '<img src="img/TM. CATFOX LOGO (1).gif" alt="Logo" style="width: 300px;  margin-bottom: 30px; position: absolute; bottom: 30px; right: 30px; ' +
-          '@media (max-width: 768px) { position: static; margin: 30px auto; }">' +
-        '</div>' +
-        '</div>');
+      '<div class="intermediate-content">' +
+      '<h2 class="vision-text">we sculpt your vision</h2>' +
+      '<img src="img/TM. CATFOX LOGO (1).gif" alt="Logo" class="logo-image">' +
+      '</div>' +
+      '</div>');
 
-      // Style the intermediate screen
-      $(".intermediate-screen").css({
-      'position': 'fixed',
-      'top': 0,
-      'left': 0,
-      'width': '100%',
-      'height': '100%',
-      'background': 'url(img/backgrounds/CHU06678.JPG) center/cover',
-      'display': 'flex',
-      'align-items': 'center',
-      'justify-content': 'center',
-      'z-index': 9999,
-      'opacity': 0,
-      'transition': 'opacity 0.3s'
-      }).animate({opacity: 1});
+      // Add CSS styles
+      $("<style>")
+      .text(`
+      .intermediate-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(img/backgrounds/CHU06678.JPG) center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.3s;
+      }
+      .intermediate-content {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      }
+      .vision-text {
+      font-size: 65px;
+      }
+      .logo-image {
+      width: 300px;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      }
+      @media (max-width: 768px) {
+      .vision-text {
+      font-size: 40px;
+      }
+      .logo-image {
+      width: 200px;
+      bottom: 250px;
+      right: 50%;
+      transform: translateX(50%);
+      }
+      }
+      `)
+      .appendTo("head");
+
+      // Show intermediate screen
+      $(".intermediate-screen").animate({opacity: 1});
 
       // Handle click on intermediate screen
       $(".intermediate-screen").one('click', function() {
       $(this).fadeOut(300, function() {
-        $(this).remove();
-        $("body").addClass('loaded');
+      $(this).remove();
+      $("body").addClass('loaded');
       });
       });
       
