@@ -89,17 +89,18 @@ $(window).on("load", function() {
       font-family: 'Anonymous Pro', monospace;
       }
       .logo-image {
-      width: 450px;
+      width: 400px;
       position: fixed;
-      bottom: 20px;
+      bottom: 30px;
       left: 30px;
       }
       @media (max-width: 768px) {
       .vision-text {
       font-size: 40px;
+      margin-bottom: 140px !important;
       }
       .logo-image {
-      width: 200px;
+      width: 250px;
       bottom: 50px;
       left: 50%;
       transform: translateX(-50%);
