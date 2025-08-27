@@ -96,7 +96,7 @@ $(window).on("load", function() {
       }
       .logo-image {
       width: 200px;
-      bottom: 250px;
+      bottom: 50px;
       right: 50%;
       transform: translateX(50%);
       }
