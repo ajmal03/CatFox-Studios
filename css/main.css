@@ -743,7 +743,7 @@
 }
 
 .about-image {
-  background-image: url("../img/backgrounds/CHU06678.JPG");
+  background-image: url("../img/backgrounds/DC.jpg");
 }
 
 .menu__controls {
@@ -760,7 +760,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .controls-about {
-    background-image: url("../img/backgrounds/CHU06678.JPG");
+    background-image: url("../img/backgrounds/DC-1.jpg");
   }
 }
 
