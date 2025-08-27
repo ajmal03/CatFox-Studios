@@ -49,9 +49,9 @@ $(window).on("load", function() {
       // Add intermediate screen
       $("body").append('<div class="intermediate-screen">' +
         '<div class="intermediate-content" style="text-align: center; max-width: 800px; padding: 20px; width: 100%;">' +
-          '<h2 style="font-size: 24px;">We empower independent artists and music creators by offering world class production, mentoring and immersive workshops to transform vision into unforgettable artistic expressions.</h2>' +
+          '<h2 style="font-size: 65px;">we sculpt your vision</h2>' +
           
-          '<img src="img/TM. CATFOX LOGO (1).gif" alt="Logo" style="width: 150px; background-color: black; padding: 5px; border-radius: 50%; margin-bottom: 30px; position: absolute; bottom: 30px; right: 30px; ' +
+          '<img src="img/TM. CATFOX LOGO (1).gif" alt="Logo" style="width: 300px;  margin-bottom: 30px; position: absolute; bottom: 30px; right: 30px; ' +
           '@media (max-width: 768px) { position: static; margin: 30px auto; }">' +
         '</div>' +
         '</div>');
